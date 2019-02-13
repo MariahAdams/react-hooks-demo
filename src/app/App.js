@@ -1,32 +1,31 @@
-import React, { Component } from 'react';
+import React from 'react';
 import UserTable from '../tables/UserTable';
 import './App.css';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <h1>React Hooks Demo</h1>
-        </header>
+const App = () => {
 
-        <main>
-          <div>
-            <h2>Add user</h2>
-          </div>
+  return (
+    <div className="App">
+      <header className="App-header">
+        <h1>React Hooks Demo</h1>
+      </header>
 
-          <div>
-            <h2>View users</h2>
-            <UserTable />
-          </div>
-        </main>
+      <main>
+        <div>
+          <h2>Add user</h2>
+        </div>
 
-        <footer>
-          End of the demo
-        </footer>
-      </div>
-    );
-  }
+        <div>
+          <h2>View users</h2>
+          <UserTable />
+        </div>
+      </main>
+
+      <footer>
+        End of the demo
+      </footer>
+    </div>
+  );
 }
 
 export default App;
