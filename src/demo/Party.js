@@ -1,14 +1,12 @@
-import React, { Component } from 'react';
+import React, { useEffect } from 'react';
 
-class Party extends Component {
-  componentDidMount() {
+function Party() {
+  useEffect(() => {
     console.log('I have arrived at the hooks party!');
     document.title = 'present';
-  }
+  });
 
-  render() {
-    return <div>something about a party</div>
-  }
+  return <div>something about a party</div>;
 }
 
 export default Party;
