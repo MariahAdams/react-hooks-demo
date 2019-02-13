@@ -10,10 +10,12 @@ const App = () => {
     { id: 3, name: 'King', username: 'BIS' }
   ];
 
-  const [ users, setUsers ] = useState(usersData);
+  const [users, setUsers] = useState(usersData);
+  const [index, setIndex] = useState(4);
 
   const addUser = user => {
-    user.id = user.length + 1;
+    setIndex(index + 1);
+    user.id = index;
     setUsers([ ...users, user ]);
   }
 
