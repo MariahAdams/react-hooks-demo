@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Counter from '../counter/Counter';
 import './App.css';
 
 class App extends Component {
@@ -8,6 +9,14 @@ class App extends Component {
         <header className="App-header">
           <h1>React Hooks Demo</h1>
         </header>
+
+        <main>
+          <Counter />
+        </main>
+
+        <footer>
+
+        </footer>
       </div>
     );
   }
