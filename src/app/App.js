@@ -1,7 +1,4 @@
 import React, { Component } from 'react';
-import Counter from '../demo/Counter';
-import Party from '../demo/Party';
-import GitHubUsers from '../demo/GitHubUsers';
 import './App.css';
 
 class App extends Component {
@@ -13,9 +10,13 @@ class App extends Component {
         </header>
 
         <main>
-          <Counter />
-          <Party />
-          <GitHubUsers />
+          <div>
+            <h2>Add user</h2>
+          </div>
+
+          <div>
+            <h2>View users</h2>
+          </div>
         </main>
 
         <footer>
