@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import UserTable from '../tables/UserTable';
+import AddUserForm from '../forms/AddUserForm';
 import './App.css';
 
 const App = () => {
@@ -11,6 +12,11 @@ const App = () => {
 
   const [ users, setUsers ] = useState(usersData);
 
+  const addUser = user => {
+    user.id = user.length + 1;
+    setUsers([ ...users, user ]);
+  }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -20,6 +26,7 @@ const App = () => {
       <main>
         <div>
           <h2>Add user</h2>
+          <AddUserForm addUser={addUser}/>
         </div>
 
         <div>
