@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import UserTable from '../tables/UserTable';
 import './App.css';
 
 const App = () => {
+  const usersData = [
+    { id: 1, name: 'Duke', username: 'Sir Duke' },
+    { id: 2, name: 'Bono', username: 'In the name of love' },
+    { id: 3, name: 'King', username: 'BIS' }
+  ];
+
+  const [ users, setUsers ] = useState(usersData);
 
   return (
     <div className="App">
@@ -17,7 +24,7 @@ const App = () => {
 
         <div>
           <h2>View users</h2>
-          <UserTable />
+          <UserTable users={users}/>
         </div>
       </main>
 
