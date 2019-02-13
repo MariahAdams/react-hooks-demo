@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Counter from '../counter/Counter';
+import Counter from '../demo/Counter';
+import Party from '../demo/Party';
 import './App.css';
 
 class App extends Component {
@@ -11,7 +12,8 @@ class App extends Component {
         </header>
 
         <main>
-          <Counter />
+            <Counter />
+            <Party />
         </main>
 
         <footer>
