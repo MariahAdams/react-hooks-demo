@@ -19,6 +19,10 @@ const App = () => {
     setUsers([ ...users, user ]);
   }
 
+  const deleteUser = id => {
+    setUsers(users.filter(user => user.id !== id));
+  }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -33,7 +37,7 @@ const App = () => {
 
         <div>
           <h2>View users</h2>
-          <UserTable users={users}/>
+          <UserTable users={users} deleteUser={deleteUser}/>
         </div>
       </main>
 
