@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import UserTable from '../tables/UserTable';
 import './App.css';
 
 class App extends Component {
@@ -16,6 +17,7 @@ class App extends Component {
 
           <div>
             <h2>View users</h2>
+            <UserTable />
           </div>
         </main>
 
