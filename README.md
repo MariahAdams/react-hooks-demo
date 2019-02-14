@@ -46,6 +46,11 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
+## Resources
+* [React Blog](https://reactjs.org/blog/2019/02/06/react-v16.8.0.html)
+* [Getting Started With React Hooks](https://scotch.io/tutorials/getting-started-with-react-hooks)
+* [CRUD app with Hooks](https://www.taniarascia.com/crud-app-in-react-with-hooks/)
+
 ## Contributor
 [Mariah Adams](https://github.com/MariahAdams)
 
