@@ -2,7 +2,7 @@ import React from 'react';
 import './tables.css';
 
 const UserTable = props => {
-  const { users, deleteUser } = props;
+  const { users, deleteUser, editRow } = props;
 
   return (
     <table>
@@ -20,7 +20,7 @@ const UserTable = props => {
               <td>{user.name}</td>
               <td>{user.username}</td>
               <td>
-                <button>Edit</button>
+                <button onClick={() => editRow(user)}>Edit</button>
                 <button onClick={() => deleteUser(user.id)}>Delete</button>
               </td>
             </tr>
